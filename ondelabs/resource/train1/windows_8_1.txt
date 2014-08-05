@@ -1,0 +1,1 @@
+Microsoft has a number of upgrades coming for Windows 8.1 on the 12th, but the company today announced in a blog post that the new features and tweaks don’t constitute an ‘Update 2′ to the operating system. Update 1 to Windows 8.1 was a large release, improving the boot preferences of the operating system, expanding device support, and also adding new user interface elements

@@ -1,0 +1,5 @@
+Last September, Google launched Web Designer, a free tool for Mac,
+Windows and Linux that makes it easy for anybody to build interactive
+HTML5 sites and ads. Since its launch, Web Designer got a couple of
+minor updates, but today’s release is the first major update in a
+long time and brings quite a few new features to the software. 

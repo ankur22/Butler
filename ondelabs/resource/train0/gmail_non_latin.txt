@@ -1,0 +1,1 @@
+Google has taken a step towards globalizing its Gmail service today, with new support for non-Latin characters and accented characters. Google is adopting an email standard introduced by the Internet Engineering Task Force in 2012 to make this happen, and expresses this will encourage broad adoption of the new standard across other email providers in the future.

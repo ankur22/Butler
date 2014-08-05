@@ -1,0 +1,1 @@
+Researchers at Carnegie Mellon University have created a way to manipulate objects in photos in three dimensions, allowing you to see all sides of formerly 2D objects. How is it done? Some might say there is dark magic afoot, but what’s really happening is far more interesting.

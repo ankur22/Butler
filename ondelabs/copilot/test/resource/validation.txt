@@ -1,0 +1,8 @@
+Chinese Beijing Chinese 1
+Chinese Chinese Shanghai 1
+Chinese Macao 1
+Tokyo Japan Chinese 0
+UK Leeds Britain 2
+Chinese Chinese Chinese Tokyo Japan 1
+UK Birmingham London Britain 2
+London Leeds Tokyo Britain 2
