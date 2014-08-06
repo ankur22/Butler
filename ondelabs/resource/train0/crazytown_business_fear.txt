@@ -1,0 +1,1 @@
+Can your computer be hacked? Yep. Can your phone be hacked? Yep. Have your passwords been harvested? Very possibly. (The NYT just reported that one Russian group has more than a billion, though it’s unclear how many are salted and hashed.) So how worried should you be, exactly? …Good luck getting a real answer to that. Almost nobody has a strong incentive to give you one.
