@@ -44,5 +44,11 @@ class DiskTrainingDAO(DiskDAO):
             logging.warn('Could not find valid class type in ' + line)
             return None
         else:
-            return TextClassType(line[:index], line[index:])
+            return TextClassType(self._removeNoiseFromText(line[:index]), line[index:])
+
+    def _removeNoiseFromText(self, text):
+        # Override so that the text can be constructed in
+        # a more preferable way e.g. remove new lines;
+        # remove symbols; all lower case.
+        return text
     

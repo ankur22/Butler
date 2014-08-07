@@ -37,4 +37,10 @@ class DiskValidationDAO(DiskDAO):
                 logging.warn('classType is not an int')
                 return None
             else:
-                return TextClassType(line[:index], int(line[index:]))
+                return TextClassType(self._removeNoiseFromText(line[:index]), int(line[index:]))
+
+    def _removeNoiseFromText(self, text):
+        # Override so that the text can be constructed in
+        # a more preferable way e.g. remove new lines;
+        # remove symbols; all lower case.
+        return text
