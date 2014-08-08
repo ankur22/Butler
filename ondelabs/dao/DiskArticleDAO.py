@@ -31,9 +31,10 @@ class DiskArticleDAO:
         classType = ClassType(folderName)
         for root, subFolders, files in os.walk(path):
             for filename in files:
-                filepath = os.path.join(root, filename)
-                article = self.__readArticle(filepath)
-                classType.addDocument(article)
+                if 'txt' in filename:
+                    filepath = os.path.join(root, filename)
+                    article = self.__readArticle(filepath)
+                    classType.addDocument(article)
         return classType
     
     def __readArticle(self, filepath):
