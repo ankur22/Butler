@@ -6,6 +6,7 @@ Created on 5 Aug 2014
 import re
 
 from topia.termextract import tag, extract
+from topia.termextract.extract import TermExtractor, permissiveFilter
 
 
 class ClassType:
@@ -29,7 +30,7 @@ class ClassType:
     def addDocument(self, document):
         noLinesDocument = self.__removeNewLines(document)
         noSymbolsDocument = self.__removeSymbols(noLinesDocument)
-        #self.__extractedKeyWords.append(self.__extractKeywords(noSymbolsDocument))
+        self.__extractedKeyWords.append(self.__extractKeywords(noSymbolsDocument))
         self.__extractedKeyWords.append(noSymbolsDocument)
     
     def __extractKeywords(self, document):
@@ -37,9 +38,12 @@ class ClassType:
         tagger.initialize()
         tokenisedText = tagger.tokenize(document)
         taggedText = tagger.tag(tokenisedText)
-        extractor = extract.TermExtractor()
+        extractor = TermExtractor(filter=permissiveFilter)
         extractedText = extractor.extract(taggedText)
-        return extractedText
+        keywords = ''
+        for text in extractedText:
+            keywords = keywords + ' ' + text[0];
+        return keywords
     
     def __removeNewLines(self, document):
         return document.replace("\n", " ")
